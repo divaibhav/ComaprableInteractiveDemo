@@ -22,5 +22,17 @@ public class StudentImplementation {
         for (Student student : studentList) {
             System.out.println(student);
         }
+        System.out.println("\nSorting using name comparator\n\n");
+        Collections.sort(studentList, new NameComparator());
+        for (Student student : studentList) {
+            System.out.println(student);
+        }
+        System.out.println("-------------------------------");
+        System.out.println("\nSorting using roll number comparator\n\n");
+        Collections.sort(studentList, new RollNumberComparator());
+        for (Student student : studentList) {
+            System.out.println(student);
+        }
+        System.out.println("-------------------------------");
     }
 }
